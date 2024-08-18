@@ -1,0 +1,124 @@
+body, html, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: darkgray;
+}
+
+body {
+    max-width: 800px;
+    height: 10000px;
+    margin: 0 auto;
+    background-color: ghostwhite;
+    box-shadow: 5px 5px 5px gray;
+    margin-top: 90px;
+}
+
+a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1d20;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.logo img {
+    width: 5%;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fa4b00;
+    box-shadow: 2px 2px 2px whitesmoke;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.menu li:hover {
+    transform: scale(1.1);
+}
+
+.tituloModulo {
+    text-align: center;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-shadow: 5px 5px 5px #fa4b00;
+}
+
+.o-que-e-musica img {
+    margin-left: 200px;
+    width: 50%;
+}
+
+.o-que-e-musica h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: tomato;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-shadow: 1px 1px 1px white;
+}
+
+.texto p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.lista ul li {
+    margin-left: 45px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.lista2 ul li {
+    margin-left: 45px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.harmonia-melodia-ritmo > div {
+    display: flex;
+    align-items: center;
+}
+
+.harmonia-melodia-ritmo img {
+    width: 35%;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.harmonia-melodia-ritmo p {
+    padding: 40px;
+}
+
