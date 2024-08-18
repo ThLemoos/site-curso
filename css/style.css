@@ -1,11 +1,11 @@
 body, ul, li, p {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin-top: 90px;
-    background-color:beige;
+    background-color: beige;
 }
 
 a {
@@ -17,7 +17,7 @@ a {
 
 h1 {
     text-align: center;
-    margin-top:  70px;
+    margin-top: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 2px 2px 2px tomato;
 }
@@ -38,16 +38,18 @@ img {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1000; /* Certifique-se de que o cabeçalho está sempre no topo */
 }
 
 .menu {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .menu li {
-    margin: 15px;
+    margin: 10px;
     padding: 10px;
     background-color: #fa4b00;
     box-shadow: 2px 2px 2px whitesmoke;
@@ -62,55 +64,128 @@ img {
 }
 
 .logo img {
-    width: 5%;
+    width: 60px;
     margin: 10px;
     border-radius: 5px;
 }
 
 .titulo {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: tomato;
     padding-top: 20px;
-    padding-bottom: 100px;
-    margin-top: 0px;
+    padding-bottom: 50px;
+    margin-top: 0;
     border-bottom: 10px solid #1e1d20;
+    text-align: center;
 }
 
 .titulo img {
-    width: 70%;
-    margin-left: 100px;
+    width: 80%;
+    margin: 20px auto;
 }
 
 .titulo h1 {
     font-family: cursive;
-    font-size: 35px;
+    font-size: 28px;
     text-shadow: 3px 3px 3px white;
+    margin-bottom: 20px;
 }
 
 .titulo p {
     font-family: Verdana, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 0 10px;
 }
 
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
-    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
 }
 
 .flexbox > div {
-    flex: 1 1 200px;
+    flex: 1 1 45%;
+    max-width: 200px;
     margin: 10px;
+    text-align: center;
 }
 
 .flexbox p {
     font-family: Arial, sans-serif;
     font-weight: bold;
-    text-align: center;
     margin-top: 10px;
 }
 
 .flexbox img:hover {
     transform: scale(1.1);
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas pequenas (smartphones) */
+@media (max-width: 600px) {
+    .titulo {
+        padding-bottom: 30px;
+    }
+
+    .titulo img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .titulo h1 {
+        font-size: 22px;
+    }
+
+    .titulo p {
+        font-size: 14px;
+    }
+
+    .flexbox > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu li {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+}
+
+/* Para telas médias (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .titulo img {
+        width: 70%;
+    }
+
+    .titulo h1 {
+        font-size: 26px;
+    }
+
+    .titulo p {
+        font-size: 16px;
+    }
+
+    .flexbox > div {
+        flex: 1 1 45%;
+    }
+
+    .menu li {
+        margin: 10px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
 }
