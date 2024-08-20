@@ -71,9 +71,10 @@ a {
 }
 
 .o-que-e-musica img {
-    margin-left: 200px;
-    width: 50%;
     max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .o-que-e-musica h2 {
