@@ -81,9 +81,10 @@ a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: tomato;
     padding: 10px;
-    margin-left: 200px;
-    margin-right: 200px;
+    width: 50%;
+    margin-left: 180px;
     text-shadow: 1px 1px 1px white;
+    box-shadow: 5px 5px 5px black;
 }
 
 .texto p {
